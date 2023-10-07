@@ -25,9 +25,6 @@ class ListingActivity : Activity{
     public ListingActivity(string name = "Listing", string description = "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.") : base(name, description){
         
     }
-    // public ListingActivity(string name = "Listing", string description = "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.", int duration = 30) : base(name, description, duration){
-        
-    // }
     public void Run(){
         DisplayStartingMessage();
 

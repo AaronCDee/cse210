@@ -46,9 +46,6 @@ class ReflectingActivity : Activity{
     public ReflectingActivity(string name = "Reflecting", string description = "This activity will help you reflect on times in your life when you have shown strenth and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.") : base(name, description){
         
     }
-    // public ReflectingActivity(string name = "Reflecting", string description = "This activity will help you reflect on times in your life when you have shown strenth and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.", int duration = 30) : base(name, description, duration){
-        
-    // }
     public void Run(){
         DisplayStartingMessage();
 
@@ -70,7 +67,7 @@ class ReflectingActivity : Activity{
             Console.WriteLine();
             runTime -= thinkTime;
         }
-        
+
         DisplayEndingMessage();
         ShowSpinner(5);
     }

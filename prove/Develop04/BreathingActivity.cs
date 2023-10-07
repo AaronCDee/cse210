@@ -6,9 +6,6 @@ class BreathingActivity : Activity {
     public BreathingActivity(string name = "Breathing", string description = "This activity will help you relax by walking you through breathingin and out slowly. Clear your mind and focus on your breathing.") : base(name, description){
         
     }
-    // public BreathingActivity(string name = "Breathing", string description = "This activity will help you relax by walking you through breathingin and out slowly. Clear your mind and focus on your breathing.", int duration = 30) : base(name, description, duration){
-        
-    // }
 
     public void Run(){
         DisplayStartingMessage();
