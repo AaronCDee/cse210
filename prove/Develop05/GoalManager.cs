@@ -233,7 +233,6 @@ class GoalManager {
         
         using (StreamWriter writer = new StreamWriter(filePath))
         {
-            // Write text to the file
             GoalManagerDTO dto = new GoalManagerDTO(_score);
             string jsonString = JsonSerializer.Serialize(dto);
             writer.WriteLine(jsonString);
@@ -275,7 +274,7 @@ class GoalManager {
                     if (isFirstLine)
                     {
                         
-                        isFirstLine = false; // Set the flag to false after processing the first line
+                        isFirstLine = false; 
                         GoalManagerDTO gmDTO = JsonSerializer.Deserialize<GoalManagerDTO>(line);
                         _score = gmDTO.Score;
                     }
