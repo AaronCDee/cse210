@@ -4,15 +4,15 @@ using System.Text.Json.Serialization;
 
 
 class GoalDTO {
-    public string ShortName {get; set;}
-    public string Description {get; set;}
-    public int Points {get; set;}
-    public string Type {get; set;}
+    public string _shortName {get; set;}
+    public string _description {get; set;}
+    public int _points {get; set;}
+    public string _type {get; set;}
 
     public GoalDTO(string shortName, string description, int points, string type){
-        ShortName = shortName;
-        Description = description;
-        Points = points;
-        Type = type;
+        _shortName = shortName;
+        _description = description;
+        _points = points;
+        _type = type;
     }
 }

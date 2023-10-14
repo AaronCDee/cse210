@@ -293,22 +293,22 @@ class GoalManager {
                                 case "SimpleGoal":
                                 {
                                     SimpleGoalDTO simpleGoal = JsonSerializer.Deserialize<SimpleGoalDTO>(line);
-                                    SimpleGoal g = new SimpleGoal(simpleGoal.ShortName, simpleGoal.Description, simpleGoal.Points);
-                                    g.SetIsComplete(simpleGoal.IsComplete);
+                                    SimpleGoal g = new SimpleGoal(simpleGoal._shortName, simpleGoal._description, simpleGoal._points);
+                                    g.SetIsComplete(simpleGoal._isComplete);
                                     AddGoal(g);
                                     break;
                                 }
                                 case "EternalGoal":
                                 {
                                     EternalGoalDTO eternalGoal = JsonSerializer.Deserialize<EternalGoalDTO>(line);
-                                    EternalGoal g = new EternalGoal(eternalGoal.ShortName, eternalGoal.Description, eternalGoal.Points);
+                                    EternalGoal g = new EternalGoal(eternalGoal._shortName, eternalGoal._description, eternalGoal._points);
                                     AddGoal(g);
                                     break;
                                 }
                                 case "ChecklistGoal":
                                 {
                                     ChecklistGoalDTO checklistGoal = JsonSerializer.Deserialize<ChecklistGoalDTO>(line);
-                                    ChecklistGoal g = new ChecklistGoal(checklistGoal.ShortName, checklistGoal.Description, checklistGoal.Points, checklistGoal.Target, checklistGoal.Bonus);
+                                    ChecklistGoal g = new ChecklistGoal(checklistGoal._shortName, checklistGoal._description, checklistGoal._points, checklistGoal._target, checklistGoal._bonus);
                                     AddGoal(g);
                                     break;
                                 }
