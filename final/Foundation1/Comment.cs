@@ -1,6 +1,6 @@
 class Comment {
-    string _name;
-    string _commentText;
+    private string _name;
+    private string _commentText;
     public Comment(string name, string commentText){
         _name = name;
         _commentText = commentText;

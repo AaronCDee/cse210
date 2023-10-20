@@ -1,9 +1,9 @@
 using System.Transactions;
 
 class Video {
-    string _title;
-    string _author;
-    double _length;
+    private string _title;
+    private string _author;
+    private double _length;
     List<Comment> _comments = new List<Comment>();
 
     public Video(string title, string author, double length){
